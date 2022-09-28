@@ -1,8 +1,16 @@
-
 class CWin{
     int width;
     int height;
     String name;
+    void setWindows(int w,int h) {
+    	width=w;
+    	height=h;
+    }
+    void setWindows(int w,int h,String s) {
+    	width=w;
+    	height=h;
+        name=s;
+    }    
     void setW(int w){
     	width=w;
     }
@@ -12,25 +20,20 @@ class CWin{
     void setName(String s){
         name=s;
     }
-    void setWindows(int w,int h) {
-    	width=w;
-    	height=h;
-    }
+
     public void show() {
         System.out.println("Name="+name);
         System.out.println("W="+width+",H="+height);
     }
 }
 
-public class Main12 {
+public class Class12 {
 	public static void main(String args[])
 	{
 		CWin cw=new CWin();
 		cw.setName("My Windows");
 		cw.setW(5);
 		cw.setH(3);
-		cw.setWindows(0,0);
-		cw.show();
-				
+		cw.show();				
 	}
 }
